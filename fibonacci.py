@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-n = int(input('wie viele Zahlen sollen angegeben werden?'))
+print('Wich number do you want to know?')
+n = int(input())
+ordinal_number = "th"
 
 def fib(n):
     fib_1 = 0
@@ -19,5 +21,12 @@ def fib(n):
             i += 1
         fib_n = fib_next
     return fib_n
-    
-print(fib(n))
+
+if n == 1:
+    ordinal_number = "st"
+elif n == 2:
+    ordinal_number = "nd"
+elif n == 3:
+    ordinal_umber = "rd"
+
+print("The "+ str(n) + ordinal_number + " number in the fibonacci row is "+ str(fib(n)))
