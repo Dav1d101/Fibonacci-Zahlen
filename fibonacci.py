@@ -30,7 +30,6 @@ elif n == 2:
     ordinal_number = "nd"
 elif n == 3:
     ordinal_umber = "rd"
-
 if n >= 0:
     print("The "+ str(n) + ordinal_number + " number in the fibonacci row is "+ str(fib(n))+"!")
 else:
