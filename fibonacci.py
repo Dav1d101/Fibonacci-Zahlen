@@ -40,4 +40,4 @@ try:
     else:
         print("there is no negative number in the fibonacci row!")
 except ValueError:
-    print("Bitte nur Zahlen eingeben!!!")
+    print("Please only insert numbers!!!")
